@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.describe "Merchants Show" do 
 
-  describe "As a visitor, when visiting merchants show page"
+  describe "As a visitor, when visiting merchants show page" do
     it "I should see a list of items that merchant sells" do 
       visit "merchants/1"
 

@@ -5,7 +5,7 @@ RSpec.describe "Merchants Index" do
     visit merchants_path
   end
 
-  describe "As a visitor, when visiting merchants"
+  describe "As a visitor, when visiting merchants" do
     it "I should see a list of merhcants by name" do 
       within(".merchants") do 
         expect(page).to have_content("Merchants")
@@ -20,7 +20,7 @@ RSpec.describe "Merchants Index" do
         click_link("Schroeder-Jerde")
       end
 
-      expect(current_path).to eq("merchants/1")
+      expect(current_path).to eq("/merchants/1")
 
       visit merchants_path
 
@@ -28,7 +28,7 @@ RSpec.describe "Merchants Index" do
         click_link("Willms and Sons")
       end
 
-      expect(current_path).to eq("merchants/3")
+      expect(current_path).to eq("/merchants/3")
     end
   end
 end
