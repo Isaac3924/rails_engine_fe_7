@@ -1,0 +1,8 @@
+<h3><%= @item.name %></h3>
+<section class="items">
+  <% @items.each do |item| %>
+    <ul>
+      <%= "#{item.name}" %>
+    </ul>
+  <% end %>
+</section>

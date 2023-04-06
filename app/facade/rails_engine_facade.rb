@@ -8,6 +8,12 @@ class RailsEngineFacade
       Merchant.new(merchant)
     end
   end
+
+  def all_items
+    @service.all_items[:data].map do |item|
+      Item.new(item)
+    end
+  end
   
   def items(merchant_id)
     @service.items(merchant_id)[:data].map do |item|
