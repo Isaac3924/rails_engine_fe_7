@@ -1,6 +1,6 @@
 class ItemsController < ApplicationController
   def index
-    @items = facade.merchants
+    @items = facade.all_items
   end
 
   def show 

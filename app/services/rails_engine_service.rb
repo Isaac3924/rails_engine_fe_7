@@ -4,7 +4,7 @@ class RailsEngineService
   end
 
   def all_items
-    get_url("/items")
+    get_url("items")
   end
 
   def items(merchant_id)
